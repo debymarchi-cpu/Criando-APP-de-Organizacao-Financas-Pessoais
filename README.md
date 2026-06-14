@@ -70,16 +70,115 @@ Durante essa etapa, você pode orientar a IA para três entregas principais:
 
 ### 3. Entregando o Desafio na DIO
 
-Finalize seu projeto criando um **repositório no GitHub** (pode ser um **fork** deste).  
-No README do seu repositório, inclua:
+PRD refinado no Copilot Web: 
 
-- Seu **prompt final** (PRD);  
-- Prints ou pequenos vídeos das interações com a IA;  
-- Um resumo do que o seu **App de Finanças Pessoais** faz;  
-- Uma breve **reflexão sobre o processo**:
-  - O que funcionou bem?  
-  - O que não funcionou como o esperado?  
-  - O que aprendeu sobre conversar com IAs?
+```markdown
+PRD – App de Organização de Finanças Pessoais
+
+Contexto
+Criar um aplicativo de organização financeira pessoal que funcione por meio de conversas em linguagem natural, permitindo que o usuário controle seus gastos sem formulários complexos ou planilhas.
+
+Problema
+A maioria dos apps exige entrada manual extensa e pouca personalização, o que desmotiva os usuários.
+O objetivo é oferecer uma experiência conversacional com recomendações automáticas de economia, reduzindo fricção e aumentando engajamento.
+
+Público-Alvo
+Iniciantes em organização financeira que buscam praticidade, simplicidade e orientação acessível.
+
+Princípio de Design Universal
+A solução deve seguir os princípios de Design Universal, garantindo que pessoas com diferentes níveis de habilidade, idade ou contexto possam usar o app com conforto e eficiência.
+Isso inclui:
+- Interface legível e intuitiva.
+- Compatibilidade com leitores de tela e comandos de voz.
+- Contraste adequado e tipografia acessível.
+- Fluxos simples e consistentes para todos os perfis de usuário.
+
+Funcionalidades-Chave
+1. Registro via chat: Inserir gastos em linguagem natural.
+2. Classificação automática: Categorizar transações sem esforço manual.
+3. Metas financeiras: Criar e acompanhar objetivos de economia.
+4. Agente Financeiro: Oferecer dicas personalizadas de economia.
+5. Relatórios simples: Visualizar insights claros e acessíveis.
+
+Entregável da IA
+Plano de MVP contendo:
+- Principais telas (chat, metas, relatórios).
+- Recursos necessários (NLP, categorização automática, motor de recomendações).
+- Esboço de validação inicial (testes com usuários iniciantes e diversidade de perfis).
+- Linguagem acessível e educativa em português.
+
+Conceito de Design Universal
+O Design Universal é uma abordagem que busca criar produtos e ambientes usáveis por todos, sem necessidade de adaptação ou design especializado.
+Ele se baseia em sete princípios:
+1. Uso equitativo: todos podem usar com igual facilidade.
+2. Flexibilidade: o produto se adapta a diferentes preferências e habilidades.
+3. Simplicidade e intuitividade: fácil de entender, independentemente da experiência.
+4. Perceptibilidade: informações claras, visuais e auditivas bem equilibradas.
+5. Tolerância a erros: reduz riscos e frustrações.
+6. Baixo esforço físico: interação confortável e eficiente.
+7. Espaço e tamanho adequados: elementos acessíveis para diferentes dispositivos e condições.
+
+Em resumo, o Design Universal garante que o app seja inclusivo, empático e funcional para todos, desde pessoas com deficiência até usuários com pouca familiaridade tecnológica.
+```
+
+Interações com o bolt.new:
+
+> Crie um App de Finanças Pessoais com base no seguinte PRD (Documento de Requisitos de Produto): (PRD)
+
+> Corrija os erros (Corrigir RLS anônimo para transações e objetivos)
+
+> Publique esta aplicação (Seu site foi publicado com sucesso! Você pode visualizá-lo em: https://personal-finance-cha-w9p2.bolt.host)
+
+
+Resultado Final no Bolt.new: https://personal-finance-cha-w9p2.bolt.host
+
+<img width="627" height="941" alt="image" src="https://github.com/user-attachments/assets/96a29797-6113-46b3-bf3c-31000ebf7dcb" />
+<img width="376" height="859" alt="image" src="https://github.com/user-attachments/assets/2ec8efa0-764a-4888-9082-4717214508cd" />
+
+# Funcionalidades do App FinConversa
+
+## Dashboard Financeiro
+Exibe receitas, despesas e saldo do mês, junto com a taxa de economia.
+Conecta-se ao objetivo do PRD de oferecer relatórios simples e personalizados.
+
+## Gastos por Categoria
+Mostra a distribuição dos gastos em porcentagem e valor (ex.: lazer, outros).
+Reflete a funcionalidade de classificação automática de transações.
+
+## Evolução Diária de Gastos
+Gráfico que acompanha os gastos ao longo dos dias, permitindo visualizar padrões.
+Suporta o acompanhamento de metas financeiras.
+
+## Dicas do Assistente
+O “Agente Financeiro” fornece recomendações práticas, como limitar gastos em lazer e investir excedentes.
+Cumpre o papel de oferecer dicas de economia personalizadas.
+
+## Transações Recentes
+Lista entradas e saídas (ex.: salário recebido, valores guardados para viagem ou metas).
+Conecta o registro de gastos com o acompanhamento de metas financeiras.
+
+---
+
+# Conexão com o PRD
+
+- O chat em linguagem natural ainda não aparece no print, mas está previsto no PRD.
+- O Design Universal deve ser aplicado garantindo contraste adequado, gráficos legíveis e suporte a leitores de tela.
+- O MVP já está representado: relatórios básicos, categorização de gastos e dicas do assistente.
+- Próximo passo: integrar o chat conversacional para completar a proposta de experiência natural e acessível.
+
+
+
+## Reflexão
+
+### O que funcionou bem?  
+O refinamento do PRD feito no Copilot ajudou muito. 
+
+### O que não funcionou como o esperado?  
+Tentei aplicar no Lovable, porem deram muitos erros e os creditos acabaram em 3 interações, para criar e 2 para corrigir e não funcionou.
+Precisei ir no Bolt.New e fazer por lá. Deu certo mais preferiria a interface e dashboard do Lovable.
+
+### O que aprendeu sobre conversar com IAs?
+Aprendi que quanto mais der detalhes e explicações der, maior vai ser a interação.
 
 > [!TIP]
 > Publique seu repositório e compartilhe o link na plataforma da DIO! Sua entrega é a prova de que você domina o raciocínio de Vibe Coding, mesmo sem escrever uma única linha de código.
